@@ -32,6 +32,14 @@
   width: 100%;
 }
 
+.hero-main-img{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-image{
   height: 100%;
   width: 100%;
@@ -130,7 +138,7 @@ h2 {
 #best-sellers h2 {
   font-size: 32px;
   margin-bottom: 10px;
-  color: var(--accent);
+  color: var(--text);
 }
 
 .subtitle {
@@ -536,5 +544,134 @@ h2 {
 @media only screen and (max-width: 700px){
   .features-grid {
     grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/*Statistics Begins*/
+
+.stats-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 200px;
+}
+
+.stats-container{
+  width: 100%;
+  display: flex;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 18px;
+  background: var(--accent);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+  border: 1px solid rgba(0,0,0,0.05);
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.stat-card {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  opacity: 0;
+}
+
+.trust-container{
+  height: max-content;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.trust-container i{
+  font-size: 20px;
+  color: #2e7d32;
+}
+
+.stat-card.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.label {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.counter {
+  font-size: 55px;
+  font-weight: 700;
+  color: #1B5E20;
+}
+
+.plus {
+  font-size: 40px;
+  color: #1B5E20;
+}
+
+.subtext {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.subdev{
+  height: max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.subdev i{
+  font-size: 20px;
+  color: #2e7d32;
+}
+
+.subdev p{
+  font-size: 15px;
+  text-align: start;
+}
+
+.subdev-cont{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.stats-img-container{
+  height: max-content;
+  width: max-content;
+  max-width: 50%;
+}
+
+.stats-img{
+  height: 400px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 700px){
+  .stats-img-container{
+    display: none;
+  }
+
+  .card{
+    width: 100%;
   }
 }

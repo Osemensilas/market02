@@ -2,13 +2,13 @@
 
 .hidden{
     opacity: 0;
-    transform: translateY(50px);
+    transform: translatex(-50vw);
     transition: 3s ease-in-out;
 }
 
 .show{
     opacity: 1;
-    transform: translateY(0);
+    transform: translatex(0);
 }
 
 .hero-header{
@@ -53,5 +53,18 @@
     to{
         opacity: 1;
         transform: translateY(0)
+    }
+}
+
+@keyframes expand{
+    from{
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+    }
+    to{
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
     }
 }
