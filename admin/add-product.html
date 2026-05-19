@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product</title>
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="../styles/add-product.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<section id="dashboard">
+
+  <!-- TOP BAR -->
+  <div class="top-bar">
+
+    <div class="logo">
+      <h2>YourStore Admin</h2>
+    </div>
+
+    <!-- NAV LINKS -->
+    <div class="nav-links">
+
+      <a href="add-product.html" class="nav-link active">
+        <i class="fa fa-plus"></i> Add Product
+      </a>
+
+      <a href="delete-product.html" class="nav-link">
+        <i class="fa fa-trash"></i> Delete Product
+      </a>
+
+    </div>
+
+    <button type="button" class="logout-btn">
+      <i class="fa fa-sign-out"></i> Logout
+    </button>
+
+  </div>
+
+  <!-- FORM CONTAINER -->
+  <div class="form-container">
+
+    <h2>Add New Product</h2>
+    <p class="subtitle">Fill in the product details below</p>
+
+    <form action="#" class="product-form">
+      <div class=""></div>
+      <!-- PRODUCT NAME -->
+      <div class="input-group">
+        <label>Product Name</label>
+        <input type="text" name="name" placeholder="Enter product name">
+      </div>
+      <!-- PRICE -->
+      <div class="input-group">
+        <label>Price</label>
+        <input type="number" name="price" placeholder="Enter product price">
+      </div>
+      <!-- CATEGORY -->
+      <div class="input-group">
+        <label>Category</label>
+
+        <select title="category" name="category">
+          <option value="">Select Category</option>
+          <option value="security protection">Security Protection</option>
+          <option value="wellness and other">Wellness and Other</option>
+        </select>
+      </div>
+      <!-- IMAGE -->
+      <div class="input-group">
+        <label>Product Image</label>
+        <input type="file" name="imageInput" id="imageInput" accept="image/*" title="image" />
+      </div>
+      <!-- DESCRIPTION -->
+      <div class="input-group">
+        <label>Description</label>
+        <textarea rows="6" name="description" placeholder="Enter product description..."></textarea>
+      </div>
+      <!-- BUTTON -->
+      <button type="submit" class="submit-btn">
+        <i class="fa fa-plus"></i> Add Product
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+<script src="../script/add-product.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+    <!--Header Begins-->
+    <header id="header">
+        <div class="header">
+            <div class="header-left">
+                <span class="logo">ORIRE</span>
+            </div>
+            <div class="header-right">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                        <div class="underline-nav"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="products.html" class="nav-link">Products</a>
+                        <div class="underline-nav"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about-us.html" class="nav-link">About Us</a>
+                        <div class="underline-nav"></div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        <div class="underline-nav"></div>
+                    </li>
+                </ul>
+                <div class="contact-container">
+                    <a href="https://wa.me/2349136264963" title="Whatsapp-us" rel="noopener" target="_blank" class="contact-btn">Whatsapp Us</a>
+                </div>
+            </div>
+            <div class="hamburger-container">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+    <!--Header Ends-->
+    <section id="products-page">
+
+        <div class="container">
+            <h2>Our Products</h2>
+            <p class="subtitle">
+                Explore our carefully selected collections
+            </p>
+            <!-- CATEGORY BUTTONS -->
+            <div class="category-tabs">
+                <button class="tab-btn active" data-category="security protection">
+                    Security Protection
+                </button>
+                <button class="tab-btn" data-category="wellness and other">
+                    Wellness and Other
+                </button>
+            </div>
+            <!-- PRODUCTS CONTAINER -->
+            <div class="product-category active" id="products-container">
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--Footer Begins-->
+    <footer id="footer">
+        <div class="footer-container">
+
+            <!-- Logo -->
+            <div class="footer-logo">
+            <h2>YourStore</h2>
+            <p>Quality products, trusted service.</p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#">Home</a>
+            <a href="#best-sellers">Products</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact Us</a>
+            </div>
+
+            <!-- Socials -->
+            <div class="footer-socials">
+            <h3>Follow Us</h3>
+
+            <div class="icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+            </div>
+
+            </div>
+
+        </div>
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom">
+            <p>© 2026 YourStore. All rights reserved.</p>
+        </div>
+    </footer>
+    <!--Footer Ends-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script/header.js"></script>
+    <script src="./script/products.js"></script>
+</body>
+</html>
