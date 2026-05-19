@@ -6,6 +6,12 @@
     transition: 3s ease-in-out;
 }
 
+.rights{
+    opacity: 0;
+    transform: translatex(50vw);
+    transition: 3s ease-in-out;
+}
+
 .show{
     opacity: 1;
     transform: translatex(0);

@@ -1,4 +1,5 @@
 const elements = document.querySelectorAll('.hidden');
+const rights = document.querySelectorAll('.rights');
 const counter = document.getElementById("counter");
 const card = document.getElementById("counterCard");
 
@@ -39,5 +40,5 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 elements.forEach((element) => {
-    observer.observe(element, card);
+    observer.observe(element, card, rights);
 });

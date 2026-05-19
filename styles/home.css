@@ -672,7 +672,25 @@ h2 {
     display: none;
   }
 
-  .card{
+  .stat-card{
     width: 100%;
+  }
+
+  .stats-section {
+    padding: 40px 10px;
+  }
+
+  .subdev {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .subdev-cont {
+    width: max-content;
+  }
+
+  .stat-card h2,
+  .stat-card p{
+    text-align: start;
   }
 }

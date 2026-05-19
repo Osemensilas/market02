@@ -57,8 +57,22 @@
     gap: 2px;
 }
 
+.nav-link{
+    transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
 .nav-link.active{
     color: var(--primary);
+}
+
+.nav-link:hover .underline-nav{
+    height: 2px;
+    width: 100%;
+    background: var(--primary);
 }
 
 .underline-nav.active{
