@@ -645,6 +645,7 @@ h2 {
 .subdev p{
   font-size: 15px;
   text-align: start;
+  color: var(--text);
 }
 
 .subdev-cont{
