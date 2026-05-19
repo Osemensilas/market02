@@ -1,6 +1,7 @@
 const navContainers = document.querySelectorAll(".nav-item");
 const hamburger = document.querySelector('.hamburger-container');
 const navContainer = document.querySelector('.header-right');
+const header = document.querySelector(".header");
 
 for (let i = 0; i < navContainers.length; i++){
 
@@ -34,4 +35,5 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle('active');
     hamburger.children[0].classList.toggle("active");
     navContainer.classList.toggle('active');
+    header.classList.toggle('active');
 })

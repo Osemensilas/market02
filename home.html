@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/animation.css">
 </head>
 <body>
     <!--Header Begins-->
@@ -58,8 +59,8 @@
         </div>
         <div class="hero">
             <div class="hero-container">
-                <h1>Orilonise Spiritual & Herbal Therapist</h1>
-                <p>Where ancient wisdom meets trado-spiritual solution.</p>
+                <h1 class="hero-header">Orilonise Spiritual & Herbal Therapist</h1>
+                <p class="hero-hext">Where ancient wisdom meets trado-spiritual solution.</p>
                 <div class="hero-btn-container">
                     <a href="https://wa.me/2349054060454" title="Whatsapp-us" rel="noopener" target="_blank" class="contact-btn">Whatsapp Us</a>
                 </div>
@@ -70,9 +71,9 @@
     <!--Why Choose Us Begins-->
     <section id="about-us">
         <div class="container">
-            <h2>Get to Know Us</h2>
+            <h2 class="hidden">Get to Know Us</h2>
             <p class="intro-text">We help you detect, cleanse, and permanently remove the root of your challenges using powerful traditional spiritual methods and sacred herbs.</p>
-            <div class="grid">
+            <div class="grid hidden">
                 <div class="card">
                     <h3>Our Mission</h3>
                     <p>
@@ -276,6 +277,11 @@
         </div>
     </section>
     <!--Contact Us Ends-->
+    <!--WhatsApp Begins-->
+    <div class="whatsapp-container">
+        <a href="https://wa.me/2349054060454"><i class="fa fa-whatsapp"></i></a>
+    </div>
+    <!--WhatsApp Ends-->
     <!--Footer Begins-->
     <footer id="footer">
         <div class="footer-container">
@@ -303,7 +309,7 @@
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://wa.me/2349054060454"><i class="fa fa-whatsapp"></i></a>
             </div>
 
             </div>
@@ -319,5 +325,6 @@
     <script src="./script/header.js"></script>
     <script src="./script/home.js"></script>
     <script src="./contact.js"></script>
+    <script src="./script/observer.js"></script>
 </body>
 </html>
