@@ -97,6 +97,7 @@
         left: 0;
         background: var(--background);
         padding: 40px;
+        z-index: 102;
     }
 
     .header-right.active ul{
