@@ -1,53 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sedan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300..900&display=swap');
 
 :root {
-  --accent: #ffffff;
   --background: #faf3e0;
   --primary: #111827;
   --text: #1f2937;
-  --grey: #c0c0c0;
+  --accent: #ffffff;
+  --muted: #6b7280;
   --danger: #fa0606;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html,
-body{
-    height: max-content;
-    width: 100vw;
-    overflow-x: hidden;
-    background: var(--background);
-    font-family: "Montserrat", sans-serif;
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background: var(--background);
+  font-family: "Montserrat", sans-serif;
 }
 
-a{
-    color: var(--text);
-    text-decoration: none;
-    font-size: 17px;
+/* TYPOGRAPHY SYSTEM */
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--primary);
 }
 
-h1{
-    color: var(--accent);
-    font-size: 30px;
-    font-weight: 700;
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary);
 }
 
-p{
-    color: var(--accent);
-    font-size: 16px;
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary);
 }
 
-.whatsapp-container{
-    position: fixed;
-    top: 90%;
-    left: 90%;
+p {
+  font-size: 16px;
+  color: var(--text);
+  line-height: 1.6;
 }
 
-.whatsapp-container i{
-    font-size: 40px;
-    color: green;
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* CONTAINER SYSTEM */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+/* WHATSAPP BUTTON FIX */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.whatsapp-container i {
+  font-size: 40px;
+  color: green;
 }
